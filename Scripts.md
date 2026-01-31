@@ -1,6 +1,8 @@
 # PinupPopper_Scripts
 
-VPX Launch PinupPopper Dual Luanch Script. Script setups up Daul launch for PinUp Popper Video Tables, VR Tables, Tables with orginial back glass. With seperate .ini file to use the VPX_GL with all options.
+VPX Launch PinupPopper Dual Launch Script. This script sets up dual launch for PinUp Popper Video Tables, VR Tables, and tables with original back glass, with a separate .ini file to use VPX_GL with all options.
+
+**Note:** This script swaps between 2 files for VR tables. If you don't use VR, you can ignore all the file swapping nonsense and use the dual launch example from the [PinUP Popper Site](https://www.nailbuster.com/wikipinup/doku.php?id=pinup_optional). Since I want different settings depending on VR or Cabinet mode, I am swapping .ini files, thus 2 .ini files are required: a normal .ini file for PUP and NoPUP play, and an .ini.VR file for VR play. This at the very least requires a .ini created for all tables. I have included some examples with the standards I used. 
 ---
 
 
