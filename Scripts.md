@@ -1,14 +1,9 @@
-<<<<<<< HEAD
-# PinupPopper Scripts
-
-VPX Launch PinupPopper Dual Launch Script. This script sets up dual launch for PinUp Popper Video Tables, VR Tables, and tables with original back glass. It includes a separate .ini file to use VPX_GL with all options.
-=======
 # PinupPopper_Scripts
 
 ---
 VPX Launch PinupPopper Dual Luanch Script. Script setups up Daul launch for PinUp Popper Video Tables, VR Tables, Tables with orginial back glass. With seperate .ini file to use the VPX_GL with all options.
 ---
->>>>>>> d4bfa9f31119da062a1790e507e885bd66fcdce3
+
 
 ```@echo off
 START "" "[STARTDIR]Launch\VPXSTARTER.exe" 30 10 60 "Visual Pinball Player" 2
@@ -66,5 +61,18 @@ if %FSMODE%==DisableTrueFullScreen (START "" "[STARTDIR]Launch\PopperKeepFocus.e
 curl -X POST --data-urlencode "table=[GAMEFULLNAME]" --data-urlencode "emu=[DIREMU]" http://localhost:8089/service/gameLaunch
 ```
 
+PinUp Popper Close Script
 ---
-Pinup Popper Close Script
+
+```"[STARTDIR]LAUNCH\PUPCLOSER.EXE" WINTIT "Visual Pinball" 10 1 
+rem Swap stored .bak and active ini (true name swap)
+set "ini=[DIRGAME]\[GAMENAME]"
+rem Reverse VR swap: restore original ini files
+set "ini=[DIRGAME]\[GAMENAME]"
+if exist "%ini%.ini.bak" (
+    if exist "%ini%.ini" move /Y "%ini%.ini" "%ini%.ini.VR"
+    move /Y "%ini%.ini.bak" "%ini%.ini"
+)
+
+curl -X POST --data-urlencode "table=[GAMEFULLNAME]" --data-urlencode "emu=[DIREMU]" http://localhost:8089/service/gameExit
+```
