@@ -1,6 +1,5 @@
 # PinupPopper_Scripts
 
----
 VPX Launch PinupPopper Dual Luanch Script. Script setups up Daul launch for PinUp Popper Video Tables, VR Tables, Tables with orginial back glass. With seperate .ini file to use the VPX_GL with all options.
 ---
 
