@@ -57,7 +57,8 @@ echo [Launch] VR swap complete >> "%LOG%"
 echo [Launch] Past Alt mode >> "%LOG%"
 START /min "" %VPXEXE% -%FSMODE%  -minimized -play "[GAMEFULLNAME]" %ALTPARAM%
 if %FSMODE%==DisableTrueFullScreen (START "" "[STARTDIR]Launch\PopperKeepFocus.exe" "Visual Pinball Player" 10)
-curl -X POST --data-urlencode "table=[GAMEFULLNAME]" --data-urlencode "emu=[DIREMU]" http://localhost:8089/service/gameLaunch```
+curl -X POST --data-urlencode "table=[GAMEFULLNAME]" --data-urlencode "emu=[DIREMU]" http://localhost:8089/service/gameLaunch
+```
 
 ---
 Pinup Popper Close Script
