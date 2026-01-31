@@ -1,9 +1,10 @@
 # PinupPopper_Scripts
+---
 
 VPX Launch PinupPopper Dual Luanch Script. Script setups up Daul launch for PinUp Popper Video Tables, VR Tables, Tables with orginial back glass. With seperate .ini file to use the VPX_GL with all options.
 ---
 
-@echo off
+```@echo off
 START "" "[STARTDIR]Launch\VPXSTARTER.exe" 30 10 60 "Visual Pinball Player" 2
 cd /d "[DIREMU]"
 
@@ -56,4 +57,4 @@ echo [Launch] VR swap complete >> "%LOG%"
 echo [Launch] Past Alt mode >> "%LOG%"
 START /min "" %VPXEXE% -%FSMODE%  -minimized -play "[GAMEFULLNAME]" %ALTPARAM%
 if %FSMODE%==DisableTrueFullScreen (START "" "[STARTDIR]Launch\PopperKeepFocus.exe" "Visual Pinball Player" 10)
-curl -X POST --data-urlencode "table=[GAMEFULLNAME]" --data-urlencode "emu=[DIREMU]" http://localhost:8089/service/gameLaunch
+curl -X POST --data-urlencode "table=[GAMEFULLNAME]" --data-urlencode "emu=[DIREMU]" http://localhost:8089/service/gameLaunch```
