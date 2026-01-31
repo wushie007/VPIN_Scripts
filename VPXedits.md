@@ -1,6 +1,7 @@
 # Changes need to the VPX file
 
-1. If the VPX table use a rom and controller feature is availble. Add the following into the VPX table Script. 
+### If the VPX table use a rom and controller feature is availble. 
+Add the following into the VPX table Script. 
 ```		If GetCustomParam(1) = "VR" Then
 			.PuPHide = 1
 		ElseIf GetCustomParam(1) = "NOPUP" Then
@@ -37,7 +38,8 @@ Example VPX Table Script (used AC DC in this example)
         On Error Goto 0
     End With
 ``
-1. Options if the Table does not have a Rom. This can be Tricker. This is my solution for the goonies table Similar tables should have a similar solution. 
+### Options if the Table does not have a Rom. 
+This can be Tricker. This is my solution for the goonies table Similar tables should have a similar solution. 
 Hear I am am using the built functions in the table "enablePupPack, enablePupDMD" and creating a sub function to control them. Bascily we are looking for the Variable that used to control the PUP or reading for the pup pack. Other tables my Simple user usePUP Variable. We would just set Variable in Script which would look a bit diffrently.You Add this in Place of the Variable 
 
 ```Dim enablePupPack, enablePupDMD
