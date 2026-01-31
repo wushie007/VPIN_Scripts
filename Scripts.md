@@ -1,8 +1,6 @@
-# PinupPopper_Scripts
----
+# PinupPopper Scripts
 
-VPX Launch PinupPopper Dual Luanch Script. Script setups up Daul launch for PinUp Popper Video Tables, VR Tables, Tables with orginial back glass. With seperate .ini file to use the VPX_GL with all options.
----
+VPX Launch PinupPopper Dual Launch Script. This script sets up dual launch for PinUp Popper Video Tables, VR Tables, and tables with original back glass. It includes a separate .ini file to use VPX_GL with all options.
 
 ```@echo off
 START "" "[STARTDIR]Launch\VPXSTARTER.exe" 30 10 60 "Visual Pinball Player" 2
