@@ -26,10 +26,7 @@ Enables VR mode
 
 ```
 [Player]
-BallTrailStrength = 0.490196
-OverrideTableEmissionScale = 1
-DynamicDayNight = 0
-EmissionScale = 0.067745
+NudgeStrength = 0.00
 MaxFramerate = 0
 MaxPrerenderedFrames = 0
 FXAA = 0
