@@ -25,13 +25,13 @@ Example VPX Table Script (used AC DC in this example)
         .ShowFrame = 0
         If NOT CustomDMD Then .Hidden = DesktopMode				'hides the external DMD when in desktop mode and color ROM is not in use
         .HandleMechanics = 0
-		If GetCustomParam(1) = "VR" Then   'Lines added Started Custom Options
+		If GetCustomParam(1) = "VR" Then
 			.PuPHide = 1
 		ElseIf GetCustomParam(1) = "NOPUP" Then
 			.PuPHide = 1
-		ElseCo
+		Else
 			.LaunchBackglass = 0
-		End If  'Lines Added End Custom Options
+		End If
 		On Error Resume Next
         .Run GetPlayerHWnd
         If Err Then MsgBox Err.Description
