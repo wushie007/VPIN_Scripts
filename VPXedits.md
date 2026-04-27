@@ -6,7 +6,7 @@ Add the following into the VPX table Script.
 			.PuPHide = 1
 		ElseIf GetCustomParam(1) = "NOPUP" Then
 			.PuPHide = 1
-		ElseCo
+		Else
 			.LaunchBackglass = 0
 		End If
 ```
